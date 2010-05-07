@@ -1,0 +1,13 @@
+p =/= False
+={ D =/= }
+-(p == False)
+={ C = }
+-(False == p)
+={ D - }
+- False == p
+={ D False }
+-(- True) == p
+={ -- }
+True == p
+={ N = }
+p
