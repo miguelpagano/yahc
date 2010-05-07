@@ -1,0 +1,21 @@
+* Documentar.
+* Usar mónadas para dar más información de porqué fallan
+  las cosas.
+
+Interfaz
+========
+* Interfaz más copada que la texto.
+* Mostrar siempre la derivación completa, de manera
+  que uno vea cómo se va completando la derivación.
+* Track de errores.
+* Errores sensibles al parsear (por ejemplo, archivos).
+* Lo ideal sería poder subrayar las sub-fórmulas donde
+  se aplicó la regla (Está hecho para LaTeX).
+
+Funcionalidad:
+==============
+
+* Poder usar yahc para ejercicios de caballeros y pícaros:
+  el usuario decide cuando terminar la derivación, algo como
+  funciona la verificación de archivos.
+* Demostraciones con monotonía.

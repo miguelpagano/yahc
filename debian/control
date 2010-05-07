@@ -1,0 +1,27 @@
+Source: haskell-yahc
+Priority: optional
+Section: misc
+Maintainer: Miguel Pagano <miguel.pagano@gmail.com>
+Build-Depends: debhelper (>= 7.0),
+               haskell-devscripts (>= 0.6.15+nmu7),
+               hscolour,
+               cdbs,
+               ghc6 (>= 6.8),
+	       libghc6-mtl-dev,
+	       libghc6-parsec3-dev,
+	       libghc6-haskell-src-dev,
+Standards-Version: 3.8.1
+
+Package: yahc
+Architecture: any
+Section: misc
+Depends: libreadline5
+Description: 
+ Yet another (written in) Haskell Checker
+ .
+  Author: Renato Cherini, Miguel Pagano
+  Upstream-Maintainer: pagano@famaf.unc.edu.ar
+ .
+ Yahc checks the correctness of a sequence of applications of some
+ axioms and theorems to the formulae students are trying to prove.
+

@@ -1,0 +1,21 @@
+Name:                yahc
+Category:            Proof Checker
+Version:             0.4
+Synopsis:            A proof checker for propositional calculus.
+Description:         
+  yahc is a program for checking derivations of propositional
+  calculus.
+License:             GPL
+License-file:        LICENSE
+Author:              Renato Cherini, Miguel Pagano
+Maintainer:          pagano@famaf.unc.edu.ar
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+tested-with:         GHC==6.10.1
+build-type:          Simple
+
+Executable yahc
+  Main-is:           Yahc/Main.lhs
+  Build-Depends:     base >= 3 && < 5, pretty, parsec >= 3.0.0, containers,
+                     haskell-src >= 1.0.1 , utf8-string, mtl >= 1.1.0.2,
+                     readline, unix, filepath

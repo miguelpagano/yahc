@@ -1,0 +1,39 @@
+yahc is a program for checking derivations of
+propositional calculus.
+
+yahc es un programa para verificar interactivamente
+derivaciones de cálculo proposicional.
+
+Instalación:
+============
+
+Para instalar debería alcanzar con ejecutar
+ $ cabal configure
+ $ cabal build
+ $ cabal install
+
+Alternativamente se puede compilar haciendo:
+ $ ghc --make Yahc/Main.lhs -o yahc
+ $ ./yahc -i
+
+
+Proposiciones:
+==============
+
+Prop ::= var 
+     | Con 
+     | - Prop
+     | Prop \/ Prop
+     | Prop /\ Prop
+     | Prop => Prop
+     | Prop <= Prop
+     | Prop == Prop
+     | Prop =/= Prop
+
+Con ::= True | False
+
+Las variables proposicionales son cadenas alfabéticas que
+comienzan con minúsculas.
+
+Las precedencias están dadas por el orden de las producciones
+dada más arriba.

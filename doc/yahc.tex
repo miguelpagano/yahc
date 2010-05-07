@@ -1,0 +1,57 @@
+\documentclass{scrreprt}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage{hcar}
+
+\begin{document}
+
+\begin{hcarentry}{Yahc}
+\report{Miguel Pagano}
+\status{experimental, maintained}
+\participants{Renato Cherini}% optional
+\makeheader
+
+
+The first course on algorithms in CS at {\it Universidad Nacional de
+  C\'ordoba} is centered on the derivations of algorithms from
+specifications, as proposed by Bird\cite{bird},
+Dijkstra\cite{dijkstra} and Hoogerwoord\cite{hoo}. To achieve this
+goal, students should acquire the ability to manipulate complex
+predicate formulae; thus the students first learn how to prove
+theorems in a propositional calculus similar to the equational
+propositional logic of Gries and Schneier\cite{gries}.
+
+During the semester students make many derivations as exercises and it
+is helpful for them to have a tool for checking the correctness of
+their solutions. Yahc checks the correctness of a sequence of
+applications of some axioms and theorems to the formulae students are
+trying to prove. The student starts a derivation by entering an
+initial formula and a goal and then proceeds by telling Yahc which
+axiom will be used and the expected outcome of applying the axiom as a
+rewrite rule; if that rewriting step is correct then the process
+continues until the student reaches the goal.
+
+At this moment the tool is in an early stage and we only consider
+propositional connectives (some of them associative-commutative).  We
+expect to extend Yahc for allowing the resolution of logical puzzles.
+In the long term we are planning to consider an equational calculus
+with functions defined by induction over lists and natural numbers.
+
+\FurtherReading
+  \url{http://www.cs.famaf.unc.edu.ar/~mpagano/yahc/}
+\end{hcarentry}
+
+\begin{thebibliography}{99}
+\bibitem{bird} Richard Bird, {\it Introduction to functional
+    programming using Haskell}.  Prentice Hall series in computer
+  science, 1998.
+\bibitem{dijkstra} Edsger W. Dijkstra {\it A Discipline of
+    Programming}.  Prentice Hall, 1976.
+\bibitem{hoo} Rob R. Hoogerwoord {\it The design of functional
+    programs: a calculational approach}. Eindhoven: Technische
+  Universiteit Eindhoven, 1989.
+\bibitem{gries} David Gries and Fred B. Schneider, {\it A Logical
+    Approach to Discrete Math}. Springer Verlag, 1993.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,31 @@
+\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH yahc 1
+.SH NAME
+yahc \- yahc checks derivations of propositional calculus.
+.SH SYNOPSIS
+.B yahc [options]
+.I [file]
+.SH DESCRIPTION
+.B yahc 
+reads a file containing a sequence of propositions and rules of 
+propositional calculus and checks that the sequence corresponds to a 
+derivation, i.e. to a correct use of the rules in each step.
+.SH OPTIONS
+.IP -r 
+.IP --rules
+Shows the known rules.
+.IP -V 
+.IP --version
+Shows the version number.
+.IP -i
+.IP --interactive
+Starts 
+.B yahc
+in the interactive mode. 
+.IP -h 
+.IP --help
+Shows a short help.
+.SH AUTHOR
+Renato Cherini, Miguel Pagano <miguel.pagano at gmail.com>
